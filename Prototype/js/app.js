@@ -259,7 +259,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     </div>
                 </div>
                 <div class="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center text-white ml-2 flex-shrink-0">
-                    <span class="text-sm font-medium">JD</span>
+                    <span class="text-sm font-medium">JJ</span>
                 </div>
             `;
         }
@@ -426,7 +426,7 @@ document.addEventListener('DOMContentLoaded', function() {
             // Update avatar initials
             const initials = fullName.split(' ').map(name => name[0]).join('');
             document.querySelectorAll('.rounded-full .text-xl, .rounded-full .text-sm, .rounded-full .text-4xl').forEach(el => {
-                if (el.textContent.trim() === 'JD') {
+                if (el.textContent.trim() === 'JJ') {
                     el.textContent = initials;
                 }
             });
