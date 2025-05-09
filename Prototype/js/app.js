@@ -115,7 +115,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 dashboardScreen.classList.remove('hidden');
                 
                 // Sample welcome message (would normally be personalized)
-                showAlert('Welcome back, John!', 'success');
+                showAlert('Welcome back, Josiah!', 'success');
             } else {
                 showAlert('Please enter both email and password', 'error');
             }
@@ -411,14 +411,14 @@ document.addEventListener('DOMContentLoaded', function() {
     if (saveProfileButton) {
         saveProfileButton.addEventListener('click', function() {
             // Get all the profile form values
-            const fullName = document.querySelector('#profile-content input[value="John Doe"]').value;
+            const fullName = document.querySelector('#profile-content input[value="Jon Josiah"]').value;
             const email = document.querySelector('#profile-content input[type="email"]').value;
             const height = document.querySelector('#profile-content input[value="178 cm"]').value;
             const weight = document.querySelector('#profile-content input[value="78 kg"]').value;
             
             // Update displayed name in sidebar and mobile menu
             document.querySelectorAll('.font-medium.text-lg, .font-semibold').forEach(el => {
-                if (el.textContent === 'John Doe') {
+                if (el.textContent === 'Jon Josiah') {
                     el.textContent = fullName;
                 }
             });
